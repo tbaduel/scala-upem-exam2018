@@ -8,7 +8,10 @@ import play.api.libs.json._
 object Parser {
 
   // TODO
-  def toDirector: String => Option[Director] = ???
+  def toDirector: String => Option[Director] = ??? /*{
+    case x if x.split(" ").length == 2 => Some(DirectorIm())
+  }
+  */
 
   // TODO
   def toName: String => Title = ???
@@ -47,12 +50,13 @@ object Parser {
     case _ => JsError("Not a valid type for Views")
   }
 
-  implicit val movieReads: Reads[Movie] = (
+  implicit val movieReads: Reads[Movie] = ???
+    /*(
     (__ \ "title").read[Title] and
       (__ \ "director").read[Director] and
       (__ \ "year").read[Year] and
       (__ \ "views").read[Views] and
       (__ \ "country").read[Country]
     ) (Movie.apply _)
-
+*/
 }
