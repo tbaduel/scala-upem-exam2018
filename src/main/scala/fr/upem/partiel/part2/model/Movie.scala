@@ -54,8 +54,8 @@ object Movie{
     final case object Italy extends Country
     final case object Germany extends Country
     final case object UnitedStates extends Country
-
   }
+
 
   // TODO Create this method
   def movie(title: Title, director: Director, year: Year, views: Views, country: Country): Movie =

@@ -26,12 +26,13 @@ object Functions {
   }
 
   // TODO
-  lazy val byDirector: List[Movie] => Map[Director, List[Movie]] = ??? /* {
+  lazy val byDirector: List[Movie] => Map[Director, List[Movie]] = ??? /*  {
     case x :: xs =>
 
     case Nil => _
 
-  }
-  */
+*/
+
+
 
 }

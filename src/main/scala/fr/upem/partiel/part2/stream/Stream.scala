@@ -19,7 +19,9 @@ object Stream {
   type SimpleSink[A] = Sink[A, Future[Done]]
 
   // TODO Create a source of Movies
-  def sourceOf[A](movies: List[A]): SimpleSource[A] = ???
+  def sourceOf[A](movies: List[A]): SimpleSource[A] =  ???
+
+
 
   // TODO Create a flow to serialize movies, using a Show typeclass instance
   def serialize[A]: SimpleFlow[A, String] = ???
